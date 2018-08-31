@@ -1,0 +1,36 @@
+//Пункты меню//
+.menu-item{
+        display: flex;
+        line-height: 30px;
+        justify-content: space-between;
+        &__triangle{
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 8px solid #0d3351;
+            cursor: pointer;
+            margin: auto 0;
+        }
+        &__icon{
+            align-self: center;
+            color: #33c7fd;
+            font-size: 14px;
+        }
+        &__text{
+            font-size: 14px;
+            margin: 0 8px;
+            &--number{
+                font-weight: bold;
+            }
+            &--support{
+                font-size: 10px;
+            }
+        }
+    &--number{
+        display: block;
+        line-height: 15px;
+        
+    }
+}
+//*//Пункты меню//*//

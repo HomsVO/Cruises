@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <title>Морские прогулки по Черному Морю</title>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="wrapper">
+                <div class="menu">
+                    <div class="drop-down__wrapper">
+                            <a href="#" class="drow-down__link-bars" id='menu-toggler'><i class="menu__icon-bars fas fa-bars"></i></a>
+                            <ul class="drop-down" id="drop-down">
+                                <li class='drop-down__item'><a class='drop-down__link' href="#">Популярные маршруты</a></li>
+                                <li class='drop-down__item'><a class='drop-down__link' href="#">Расписание рейсов</a></li>
+                                <li class='drop-down__item'><a class='drop-down__link' href="#">Забронированные рейсы</a></li>
+                                <li class='drop-down__item'><a class='drop-down__link' href="#">Вход для партнеров</a></li>
+                                <li class='drop-down__item'><a class='drop-down__link' href="#">О компании</a></li>
+                                <li class='drop-down__item'><a class='drop-down__link' href="#">Контакты</a></li>
+                            </ul>      
+                    </div>
+                    <ul class="menu__items">
+                        <li class="menu-item">
+                            <i class="menu-item__icon fas fa-user"></i>
+                            <span class="menu-item__text" >Личный кабинет</span>
+                            <div class="menu-item__triangle"></div>
+                        </li>
+                        <li class="menu-item">
+                            <i class="menu-item__icon fas fa-ruble-sign"></i>
+                            <span class="menu-item__text">Рубль</span>
+                            <div class="menu-item__triangle"></div>
+                        </li>
+                        <li class="menu-item">
+                            <span class="menu-item__text">Ru</span>
+                            <div class="menu-item__triangle"></div>
+                        </li>
+                        <li class="menu-item menu-item--number">
+                            <div class="menu-item__text menu-item__text--number">8 800 500-61-05</div>
+                            <div class="menu-item__text menu-item__text--support">Круглосуточная поддержка</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title">
+                    <img class="title__logo" src="img/logo.png" alt="">
+                    <h2 class="title__h2">Морские прогулки</h2>
+                    <h1 class="title__h1">ПО ЧЕРНОМУ МОРЮ</h1>
+                    <a class="button" href="#cruises">Выбрать круиз</a>
+                </div>  
+                <img src="img/line-way.png" alt="" class="line-way">
+            </div>
+        </header>
+        <main class="main">
+            <div class="wrapper">
+                <h2 class="main__title" id="cruises">Каталог круизов</h2>
+                <div class="sort-cruise">
+                    <span class="sort-cruise__text">Сортировка круиза по цене</span>
+                    <div class="sort-cruise__triangle"></div> 
+                </div>   
+                <div class="popup" id='popup'>
+                        <div class="popup__overlay"></div>
+                        <div class="popup__window">
+                            <div class="close close--popup" id='close-popup'></div>
+                            <div class="popup__imgs-block">
+                                <img src="img/popup/sea-3141781_1920.png" alt="" class="popup__main-img" id="popup__main-img">
+                                <div class="popup__imgs" id='popup__imgs' >
+                                    <img src="img/anapa.png" alt="">
+                                    <img src="img/media750/novorossiysk-211521_1920.png" alt="">
+                                    <img src="img/media750/sochi-2461968_1920.png" alt="">
+                                    <img src="img/popup/Слой 292 копия 3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="popup__discription">
+                                <h2 class="popup__title">Морская прогулка в Абрау-Дюрсо</h2>
+                                <div class="popup__route"><b>Маршрут: </b>Сочи-Абрау-Дюрсо</div>    
+                                <div class="popup__duration"><b>Продолжительность: </b>11 ч 0 мин</div>   
+                                <b>Расписание:</b>
+                                <p>
+                                    Отправление из Сочи ежедневно в 10.00,11.40,13.20,15.00,16.40
+                                </p>
+                                <p>
+                                    Отправление из Абрау-Дюрсо ежедневно в 12.25,14.05,15.45,17.25,19.05
+                                </p>
+                                <p>
+                                    Продолжительность:11 часов 0 мин из которых
+                                    10 часов - морская прогулка (туда и обратно) от 
+                                    1 часа 30 мин - свободное время в Ласточкином гнезде
+                                </p>
+                                <p>
+                                    Причал отправления/прибытия: набережная 
+                                    Ленина, причал №8, теплоход "Азов"
+                                </p>
+                                <span class="popup__price">14 800 руб.</span> 
+                                <a href="#" class="button button--reservation">Бронирование</a>
+                            </div>
+                        </div>
+                 </div> 
+                <div class="cruises">
+                        <div class="cruise-block cruise-block--high">
+                            <div class="tag tag--bestseller"></div>
+                            <img src="img/anapa.png" alt="" class="cruise-block__img">
+                            <img src="img/media750/lighthouse-1319560.png" alt="" class="cruise-block__img cruise-block__img--media750">
+                            <div class="cruise-block__discription">
+                                <a href='#' class="cruise-block__link">
+                                    <span class="cruise-block__link-text">Морской круиз в Анапу</span>
+                                    <div class="cruise-block__link-triangle"></div>
+                                </a>
+                                <div class="cruise-block__route"><b>Маршрут: </b>Сочи-Лазеревское-Геленджик-Анапа</div>    
+                                <div class="cruise-block__duration"><b>Продолжительность: </b>10 ч 0 мин</div>   
+                                <span class="cruise-block__price">49 000 руб.</span> 
+                            </div>
+                        </div>
+                        <div class="cruise-block cruise-block--normal">
+                                <img src="img/novorossiysk-211521_1920.png" alt="" class="cruise-block__img">
+                                <img src="img/media750/novorossiysk-211521_1920.png" alt="" class="cruise-block__img cruise-block__img--media750">
+                                <div class="cruise-block__discription">
+                                    <a href='#' class="cruise-block__link">
+                                        <span class="cruise-block__link-text">Морской круиз в Новороссийск</span>
+                                        <div class="cruise-block__link-triangle"></div>
+                                    </a>
+                                    <div class="cruise-block__route"><b>Маршрут:</b>Сочи-Геленджик-Новороссийск-Геленджик-Сочи</div>    
+                                    <div class="cruise-block__duration"><b>Продолжительность:</b>13 ч 0 мин</div>   
+                                    <span class="cruise-block__price">14 800 руб.</span> 
+                                </div>
+                        </div>
+                        <div class="cruise-block cruise-block--small">
+                            <div class="tag tag--stock"></div>
+                            <img src="img/sochi-2461968_1920.png" alt="" class="cruise-block__img">
+                            <img src="img/media750/sochi-2461968_1920.png" alt="" class="cruise-block__img cruise-block__img--media750">
+                            <div class="cruise-block__discription">
+                                <a href='#' class="cruise-block__link">
+                                    <span class="cruise-block__link-text">Обзорная морская прогулка с экскурсией</span>
+                                    <div class="cruise-block__link-triangle"></div>
+                                </a>
+                                <div class="cruise-block__route"><b>Маршрут: </b>Сочи-Адлер-Сочи(без высадки)</div>    
+                                <div class="cruise-block__duration"><b>Продолжительность: </b>1 ч. 0 мин</div>   
+                                <span class="cruise-block__price">5 000 руб. <s class="cruise-block__s-price">15000 руб</s></span> 
+                            </div>  
+                        </div>
+                        <div class="cruise-block cruise-block--small">
+                            <div class="tag tag--discount"></div>
+                            <img src="img/Слой 21.png" alt="" class="cruise-block__img">
+                            <img src="img/media750/Слой 33.png" alt="" class="cruise-block__img cruise-block__img--media750">
+                            <div class="cruise-block__discription">
+                                <a href='#' class="cruise-block__link">
+                                    <span class="cruise-block__link-text">Морской круиз в Анапу</span>
+                                    <div class="cruise-block__link-triangle"></div>
+                                </a>
+                                <div class="cruise-block__route"><b>Маршрут: </b>Сочи-Туапсе-Геленджик</div>    
+                                <div class="cruise-block__duration"><b>Продолжительность: </b>12 ч 30 мин</div>   
+                                <span class="cruise-block__price">7 000 руб.<s class="cruise-block__s-price">10000 руб</s></span> 
+                            </div>
+                        </div>   
+                        <div class="cruise-block cruise-block--normal cruise-block--media-hiden">
+                            <img src="img/sea-3141781_1920.png" alt="" class="cruise-block__img ">
+                            <div class="cruise-block__discription">
+                                <a href='#' class="cruise-block__link">
+                                    <span class="cruise-block__link-text">Морской круиз в Абрау-Дюрсо</span>
+                                    <div class="cruise-block__link-triangle"></div>
+                                </a>
+                                <div class="cruise-block__route"><b>Маршрут:</b>Сочи-Абрау-Дюрсо</div>    
+                                <div class="cruise-block__duration"><b>Продолжительность:</b>11 ч 0 мин</div>   
+                                <span class="cruise-block__price">14 800 руб.</span> 
+                            </div>
+                        </div> 
+                    </div>
+                    <a href="#" class="button button--more-cruises">Больше круизов<span class="button__triangle"></span></a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__blocks">
+                    <div class="footer__block footer__block--about-block">
+                            <a href='#'><span class="footer__forPartners">Вход для партнеров</span></a>
+                            <a href='#'><span class="footer__about">О компании</span></a>
+                            <a href='#'><span class="footer__contacts">Контакты</span></a>
+                        </div>
+                        <div class="footer__block footer__block--social">
+                            <span class="footer__social-text">Будь на связи:</span>
+                            <div class="footer__social-links">
+                                <a class="footer__social-link" href="#"><img class="footer__social-icon" src="img/social/vk.png" alt=""></a>
+                                <a class="footer__social-link" href="#"><img class="footer__social-icon" src="img/social/ok.png" alt=""></a>
+                                <a class="footer__social-link" href="#"><img class="footer__social-icon" src="img/social/yt.png" alt=""></a>
+                                <a class="footer__social-link" href="#"><img class="footer__social-icon" src="img/social/insta.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="footer__block footer__block--copyright">
+                            <span class="footer__copyright-number">8 800 500-61-05</span>
+                            <span class="footer__copyright-support">Круглосуточная поддержка</span>
+                            <span class="footer__copyright-text">&copy; 2016 OOO «Городские Круизы»</span>
+                        </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src='js/drop-down.js'></script>
+    <script src='js/popup.js'></script>
+</body>
+</html>

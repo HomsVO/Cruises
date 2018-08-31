@@ -1,0 +1,149 @@
+//helpers//
+*{
+    margin: 0;
+    padding: 0;
+    a{
+        text-decoration: none;
+    }
+}
+html{
+    scroll-behavior: smooth;
+    background: #f3f3f3;
+}
+.close{
+    position: absolute;
+    transform: rotate(85deg);
+    cursor: pointer;
+    &::after,&::before{
+        display: block;
+        content: '';
+        width: 20px;
+        height: 1px;
+        transform: rotate(-40deg);
+        background-color: #8699a8;
+    }
+    &::before{
+        transform: rotate(50deg);
+    }
+    &--popup{
+        right: 40px;
+        top: 45px;
+    }
+}
+.button{
+    position: relative;
+    font-family: 'Raleway',sans-serif;
+    background-color: #33c7fd;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 15px 50px;
+    &:hover{
+        background-color: #13b0e9;
+    }
+    &:active{
+        background-color: #64d6ff;
+    }
+    &--more-cruises{
+        margin:15px 0 0 0;
+    }
+    &--reservation{
+        top: 50px;
+        right: 160px;
+    }
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.button__triangle {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid #fff;
+    cursor: pointer;
+    margin: auto 0;
+  }
+.tag{
+    color: #fff;
+    padding: 5px 0 0 0 ;
+    line-height: 20px;
+    height: 85px;
+    width: 90px;
+    right: 45px;
+    top: -5px;
+    position: absolute;
+    &::after{
+        position: absolute;
+        top: 90px;
+        content:"";
+        display: block;
+        width: 0;
+        height: 0;
+    }
+    &::before{
+        font-family: 'Raleway',sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 28px;
+        left: 0;
+    }
+    &--bestseller{
+        background-color: #33c7fd;
+        &::after{
+            border-left: 40px solid #33c7fd;
+            border-right: 50px solid #33c7fd;
+            border-bottom: 20px solid transparent;
+        }
+        &::before{
+            content: 'Хит продаж';
+        }
+    }
+    &--stock{
+        background-color: #f20542;
+        &::after{
+            border-left: 40px solid #f20542;
+            border-right: 50px solid #f20542;
+            border-bottom: 20px solid transparent;
+        }
+        &::before{
+            top: 40px;
+            left:17px;
+            content: 'Акция';
+        }
+    }
+    &--discount{
+        background-color: #f20542;
+        &::after{
+            border-left: 40px solid #f20542;
+            border-right: 50px solid #f20542;
+            border-bottom: 20px solid transparent;
+        }
+        &::before{
+            content: 'Скидка 10%';
+        }
+    }
+}
+@media (max-width:750px){
+    .wrapper{
+        max-width: 750px;
+    }
+}
+@media (max-width:320px){
+    .wrapper{
+        max-width: 320px;
+    }
+}
+.show{
+    display: block!important;
+    
+}
+.hide{
+    display: none;
+}
+/*//helpers//*/
