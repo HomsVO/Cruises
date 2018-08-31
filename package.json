@@ -1,0 +1,25 @@
+{
+  "name": "html-test",
+  "version": "1.0.0",
+  "description": "**Тестовые задания принимаются до 10 сентября**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HomsVO/html-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HomsVO/html-test/issues"
+  },
+  "homepage": "https://github.com/HomsVO/html-test#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-less": "^4.0.1"
+  }
+}
